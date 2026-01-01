@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy New Year 🎆</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Short+Stack&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- AUDIO -->
+  <audio id="mySong" src="audio/supa dupa luv.mp3" loop></audio>
+
+  <!-- BACKGROUND -->
+  <canvas id="canvas-matrix"></canvas>
+
+  <div class="main-container">
+
+    <!-- MUSIC BUTTON (PINNED TOP) -->
+    <button class="music-btn" onclick="togglePlay()">🎵 Play Music</button>
+
+    <header class="card intro-card">
+      <h1>Happy New Year! 🎆</h1>
+      <p>2026: More happiness, less sadness!</p>
+    </header>
+
+    <!-- PHOTO STRIP -->
+    <section class="photo-strip-container">
+      <div class="photo-strip">
+        <div class="frame"><img src="images/Love1.jpg"></div>
+        <div class="frame"><img src="images/Love2.jpg"></div>
+        <div class="frame"><img src="images/Love3.jpg"></div>
+        <div class="frame"><img src="images/Love4.jpg"></div>
+        <div class="strip-label">Page Full of Love ♡</div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery-section">
+      <h2>Little Reminders ♡</h2>
+
+      <div class="grid-gallery">
+        <!-- 10 IMAGES -->
+        <div class="art-frame" onclick="openModal(this)"><img src="images/remind1.jpg"><span>Be Kind</span></div>
+        <div class="art-frame" onclick="openModal(this)"><img src="images/remind2.jpg"><span>Stay Bright</span></div>
+        <div class="art-frame" onclick="openModal(this)"><img src="images/remind3.jpg"><span>Grow Daily</span></div>
+        <div class="art-frame" onclick="openModal(this)"><img src="images/remind4.jpg"><span>Dream Big</span></div>
+        <div class="art-frame" onclick="openModal(this)"><img src="images/remind5.jpg"><span>Be Brave</span></div>
+        <div class="art-frame" onclick="openModal(this)"><img src="images/remind6.jpg"><span>You're Enough</span></div>
+        <div class="art-frame" onclick="openModal(this)"><img src="images/remind7.jpg"><span>Love Yourself</span></div>
+        <div class="art-frame" onclick="openModal(this)"><img src="images/remind8.jpg"><span>Keep Going</span></div>
+        <div class="art-frame" onclick="openModal(this)"><img src="images/remind9.jpg"><span>Smile Often</span></div>
+        <div class="art-frame" onclick="openModal(this)"><img src="images/remind10.jpg"><span>You Matter</span></div>
+      </div>
+    </section>
+
+    <div class="quote-card">
+      <p id="quote-text">Semoga kamu selalu dipeluk baik semesta 🤍</p>
+    </div>
+
+    <div class="namebox">
+      <h1>YUYUN ❤️ YOU. Thank you for coming into my life</h1>
+    </div>
+  </div>
+
+  <!-- MODAL (HARUS DI LUAR CONTAINER) -->
+  <div id="imgModal" class="modal" onclick="closeModal()">
+    <img id="modalImg">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
